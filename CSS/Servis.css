@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+    box-sizing: border-box;
+}
+#body{
+    background: url(zero1.jpg);
+}
+.services-section{
+    background-size: 100%;;
+    padding: 60px 0;
+}
+.inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.title{
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.broder{
+    width: 160px;
+    height: 2px;
+    background: white;
+    margin: 40px auto;
+}
+.kembali{
+    display:flexbox;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 39px;
+    margin-bottom: 50%;
+}
+.kembali a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid white;
+}
+
+.kembali span{
+    word-spacing: 10px;
+}
+
+.kembali a:hover{
+    background-color: greenyellow;
+    color: black;
+}
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-box{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+}
+.servi-icon{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid white;
+    color: white;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+.servi-icon i{
+    line-height: 65px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+}
+.services-box:hover .servi-icon{
+    background: greenyellow;
+    color: black;
+}
+.service-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 10ox;
+}
+.service-dec{
+    font-size: 14px;
+}
+@media screen and ( max-width: 1000px) {
+    .services-box{
+        max-width: 80%;
+    }
+}

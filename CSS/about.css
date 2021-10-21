@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "josefin Sans" sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+#body{
+    background-image: url(../CSS/zero1.jpg); 
+    text-align: center;
+}
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    display: flex;
+}
+.about img{
+    height: auto;
+    width: 420px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.foto2{
+    display: none;
+}
+.about h1{
+    color: white;
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+span{
+    color: yellowgreen;
+}
+.about-text p{
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    color: whitesmoke;
+    text-align: center;
+}
+button{
+    background: rgba(153, 205, 50, 0);
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 13px 30px; 
+    cursor: pointer;
+    margin-left: 10px;
+}
+button a{
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: yellowgreen;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@media screen and ( max-width: 1000px) {
+    .foto{
+        display: none;
+    }
+    .foto2{
+        display: inherit;
+        max-width: 66%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

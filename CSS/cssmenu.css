@@ -212,15 +212,12 @@ h6{
         left: 6%;
     }
     hr{
-        margin-top: 1%;
+        margin-top: 0%;
         width: 420px;
         margin-left: -12%;
     }
     .hiden{
         display: inherit;
-        width: 110px;
-    }
-    .nonhiden{
         width: 110px;
     }
 }

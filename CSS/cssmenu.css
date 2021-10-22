@@ -168,9 +168,9 @@ h6{
     left: 28%;
 }
 
-@media screen and ( max-width: 1000px) {
+@media screen and ( max-width: 994px) {
     .zero{
-        font-size: 35px;
+        font-size: 25px;
         text-align: center;
     }
     .pemanis{
@@ -178,6 +178,7 @@ h6{
         top: 10%;
         width: 400px;
         height: 400px;
+        display: none;
     }
     nav{
         display: none;
@@ -186,31 +187,34 @@ h6{
         bottom: -8%;
     }
     .Text p{
-       font-size: 25px;
+       font-size: 29px;
     }
     .Text h3{
-        margin-top: -40px;
         font-size: 15px;
     }
     .Text h1{
-        margin-top: -40px;
-        font-size: 55px;  
+        margin-top: -30px;
+        font-size: 47px;  
     }
     .exp span{
         margin-top: 10px;
-        text-align: center;
+    }
+    .exp br{
+        display: none;
     }
     .exp a{
-        margin-left: 60px;
+        margin-left: 35px;
         margin-bottom: 10px;
     }
     h6{
         margin-bottom: -95px;
         text-align: center;
-        left: 2%;
+        left: 6%;
     }
     hr{
-        margin-top: 22%;
+        margin-top: 1%;
+        width: 420px;
+        margin-left: -12%;
     }
     .hiden{
         display: inherit;

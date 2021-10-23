@@ -270,4 +270,18 @@ h6{
     .exp a{
         margin-bottom: 10px;
     }
+    h6{
+        margin-bottom: -95px;
+        text-align: center;
+        left: 6%;
+    }
+    hr{
+        margin-top: -10%;
+        width: 420px;
+        margin-left: -12%;
+    }
+    .hiden{
+        display: inherit;
+        width: 110px;
+    }
 }

@@ -267,6 +267,9 @@ h6{
        text-align:justify;
        margin-right: 50px; 
     }
+    .exp span br{
+        display: inherit;
+    }
     .Text h3 br{
         display: inherit;
     }

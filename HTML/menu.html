@@ -10,28 +10,37 @@
     <img src="zero5.png" class="pemanis">
     <div class="cont">
         <nav>
-            <ul class="kuro">
+            <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="../HTML/SERVICE.html">Services</a></li>
                 <li><a href="../HTML/contact.html">Contact</a></li>
                 <li><a href="../HTML/about.html">About</a></li>
             </ul>
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
         <div class="Text">
             <p>I'M</p>
             <h1>ARI RACHMAN</h1>
-            <h3>I WILL HELP YOU TO HAVE EXPERIENCE IN A FANTASY WORLD</h3>
+            <h3>I WILL HELP YOU TO HAVE EXPERIENCE<br> IN A FANTASY WORLD</h3>
 
             <div class="exp">
                 <a href="#" class="nonhiden">My Work</a>
                 <a href="../HTML/contact.html" class="nonhiden">Coment</a>
-                <span>L I V E E V E N T H O U G H T H E <br>W O R L D H A T E S Y O U</span>
+                <span>L I V E E V E N T H O U G H T H E<br> W O R L D H A T E S Y O U</span>
             </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <hr>
-    <h6>h a n y a &nbsp;p r o j e k &nbsp;w e b s i t e  &nbsp;s e d e r h a n a &nbsp; m o h o n &nbsp;d u k u n g a n y a</h6>
-    
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function(){
+            nav.classList.toggle('slide');
+        });
+    </script>
 </body>
 </html>

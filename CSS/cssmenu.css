@@ -7,20 +7,66 @@
 
 body{
     background-image: url(zero1.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    position:fixed;
     width: 100%;
     height: 100vh;
     padding: 0 8%;
     background-position: center;
     background-size: cover;
-    padding: 0 08%;
 }
+
+.menu-toggle{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    left: 47%;
+    top: 120px;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: ivory;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    right: -5.5px;
+    top: -3px;
+    opacity: 0.0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px, 0px) ;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+}
+
 .cont{
     width: 100%;
     height: 100vh;
-    padding: 0 8%;
     background-position: center;
     background-size: cover;
     padding: 0 002%;
@@ -75,7 +121,6 @@ nav ul li a:hover:after{
 }
 
 .zero{
-    color: white;
     word-spacing: 20px;
     position: relative;
     bottom: -40px;
@@ -120,8 +165,7 @@ nav ul li a:hover:after{
 
 .Text h1{
     font-size: 100px;
-    line-height: 160px;
-    margin: -10px;
+    line-height: 140px;
     color: transparent;
     -webkit-text-stroke: 1px white;
     background: url(back.png);
@@ -129,6 +173,7 @@ nav ul li a:hover:after{
     background-position: 0 0;
     animation: back 20s linear infinite;
 }
+
 
 @keyframes back{
     100%{
@@ -153,7 +198,6 @@ nav ul li a:hover:after{
     margin-left: auto;
     margin-right: auto;
 }
-
 hr{
     bottom: -1%;
 }
@@ -167,60 +211,63 @@ h6{
     word-spacing: 05px;
     left: 28%;
 }
+.Text h3 br{
+    display: none;
+}
 
-@media screen and ( max-width: 994px) {
+@media screen and ( max-width: 500px) {
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul{
+        display: flex;
+        width: 110%;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background-color:rgba(119, 136, 153, 0.911);
+        z-index: 1;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+    nav ul.slide{
+        transform: translateX(0);
+    }
     .zero{
-        font-size: 25px;
+        font-size: 18px;
         text-align: center;
     }
-    .pemanis{
-        left: 13%;
-        top: 10%;
-        width: 400px;
-        height: 400px;
+    .exp span br{
         display: none;
     }
-    nav{
+
+    .pemanis{
         display: none;
+    }
+    body{
+        height: 90vh;
     }
     .Text{
         bottom: -8%;
-    }
-    .Text p{
-       font-size: 29px;
+        width: 100%;
     }
     .Text h3{
-        font-size: 15px;
+        font-size: 13px;
     }
     .Text h1{
         margin-top: -30px;
-        font-size: 47px;  
+        font-size: 40px;  
     }
     .exp span{
-        margin-top: 10px;
-    }
-    .exp br{
-        display: none;
+       font-size: 15px;
+       text-align:justify;
+       margin-right: 50px; 
     }
     .exp a{
-        margin-left: 35px;
         margin-bottom: 10px;
-    }
-    h6{
-        margin-bottom: -95px;
-        text-align: center;
-        left: 6%;
-    }
-    hr{
-        margin-top: 1%;
-        width: 420px;
-        margin-left: -12%;
-    }
-    .hiden{
-        display: inherit;
-        width: 110px;
-    }
-    .nonhiden{
-        width: 110px;
     }
 }

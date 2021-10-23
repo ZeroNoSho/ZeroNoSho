@@ -263,9 +263,12 @@ h6{
         font-size: 40px;  
     }
     .exp span{
-       font-size: 15px;
+       font-size: 13px;
        text-align:justify;
        margin-right: 50px; 
+    }
+    .Text h3 br{
+        display: inherit;
     }
     .exp a{
         margin-bottom: 10px;

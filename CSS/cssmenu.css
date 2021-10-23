@@ -229,7 +229,7 @@ h6{
         align-items: center;
         height: 100vh;
         flex-direction: column;
-        background-color: gray;
+        background-color: rgba(128, 128, 128, 0.925);
         z-index: 1;
         transform: translateX(100%);
         transition: all 1s;

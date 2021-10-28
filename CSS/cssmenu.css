@@ -217,7 +217,7 @@ h6{
     display: none;
 }
 
-@media screen and ( max-width: 750px) {
+@media screen and ( max-width: 758px) {
     .menu-toggle{
         display: flex;
     }
@@ -292,7 +292,7 @@ h6{
     }
 }
 
-@media screen and ( max-width: 556px) {
+@media screen and ( max-width: 540px) {
     .menu-toggle{
         display: flex;
     }

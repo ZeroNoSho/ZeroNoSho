@@ -86,7 +86,7 @@ nav{
 nav ul{
     flex: 1;
     text-align: right;
-    padding-right: 30px;
+    padding-right: 80px;
 }
 nav ul li{
     display: inline-block;
@@ -221,7 +221,7 @@ h6{
     }
     nav ul{
         display: flex;
-        width: 107%;
+        width: 120%;
         position: absolute;
         top: 0;
         left: 0px;
@@ -229,7 +229,7 @@ h6{
         align-items: center;
         height: 100vh;
         flex-direction: column;
-        background-color: rgba(128, 128, 128, 0.925);
+        background-color: black;
         z-index: 1;
         transform: translateX(100%);
         transition: all 1s;
@@ -256,14 +256,14 @@ h6{
         width: 100%;
     }
     .Text h3{
-        font-size: 18px;
+        font-size: 15.5px;
     }
     .Text h1{
         margin-top: -30px;
-        font-size: 40px;  
+        font-size: 37.5px;  
     }
     .exp span{
-       font-size: 13px;
+       font-size: 12px;
        text-align:justify;
        margin-right: 50px; 
     }
@@ -274,7 +274,7 @@ h6{
         display: inherit;
     }
     .exp a{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     h6{
         margin-bottom: -95px;

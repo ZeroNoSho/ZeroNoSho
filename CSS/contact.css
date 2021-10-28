@@ -59,6 +59,29 @@
     border: 2px solid white;
     border-radius: 24px;
 }
+.text1{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+    border: 2px solid white;
+    border-radius: 24px;
+    padding: 7px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.text1 p{
+    margin-top: 10px;
+}
+.text1 h3{
+    font-weight: 500;
+    color: white;
+}
 .text{
     display: flex;
     margin-left: 20px;
@@ -164,7 +187,18 @@
 
 @media (max-width: 991px){
     .contact{
-        padding: 50px;
+        padding: 0px;
+        min-width: 0vh;
+    }
+    .text1{
+        width: 100%;
+        margin-top: -10px;
+    }
+    .text{
+        width: 100%;
+    }
+    .icon{
+        margin-top: 1px;
     }
     .container{
         flex-direction: column;

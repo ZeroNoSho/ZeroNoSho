@@ -407,7 +407,8 @@ h6{
         height: 90vh;
     }
     .Text{
-        bottom: -8%;
+        position: fixed;
+        bottom: 4%;
         width: 100%;
     }
     .Text h3{

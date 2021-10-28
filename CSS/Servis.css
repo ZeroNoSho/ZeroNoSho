@@ -31,11 +31,11 @@
     margin: 40px auto;
 }
 .kembali{
-    display:flexbox;
     text-align: center;
     flex-wrap: wrap;
     margin-top: 39px;
     margin-bottom: 50%;
+    margin-left: 20px;
 }
 .kembali a{
     color: white;

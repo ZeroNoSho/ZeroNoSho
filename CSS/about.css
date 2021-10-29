@@ -91,3 +91,12 @@ button:hover{
         margin-bottom: 10px;
     }
 }
+
+#preloder{
+    background: rgb(0, 0, 0) url(zeroww.gif) no-repeat center;
+    height: 100vh;
+    background-size: 25%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}

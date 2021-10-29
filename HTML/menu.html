@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../CSS/cssmenu.css">
 </head>
 <body>
+    <div id="preloder"></div>
     <h1 class="zero">P E R F E C T</h1>
     <div class="cont">
         <nav>
@@ -40,6 +41,13 @@
         menuToggle.addEventListener('click', function(){
             nav.classList.toggle('slide');
         });
+    </script>
+
+    <script>
+        var loader = document.getElementById("preloder");
+        window.addEventListener("load", function(){
+            loader.style.display = "none"
+        })
     </script>
 </body>
 </html>

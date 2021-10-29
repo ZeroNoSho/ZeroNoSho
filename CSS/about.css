@@ -5,7 +5,7 @@
     box-sizing: border-box;
     color: white;
 }
-#body{
+body{
     background-image: url(../CSS/zero1.jpg); 
     text-align: center;
 }
@@ -92,7 +92,7 @@ button:hover{
     }
 }
 
-#preloder{
+#preloder2{
     background: rgb(0, 0, 0) url(zeroww.gif) no-repeat center;
     height: 100vh;
     background-size: 25%;

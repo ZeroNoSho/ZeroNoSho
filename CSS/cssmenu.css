@@ -313,7 +313,7 @@ footer{
         position: absolute;
         width: 100%;
         height: 100px;
-        bottom: -25%;
+        bottom: -20%;
         left: 0;
         background-color: rgba(51, 51, 51, 0.411);
     }
@@ -330,7 +330,7 @@ footer{
     }
 }
 
-@media screen and ( max-width: 540px) {
+@media screen and ( max-width: 541px) {
     .menu-toggle{
         display: flex;
     }
@@ -405,6 +405,26 @@ footer{
     .hiden{
         display: inherit;
         width: 110px;
+    }
+
+    footer{
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        bottom: -11%;
+        left: 0;
+        background-color: rgba(51, 51, 51, 0.411);
+    }
+    
+    .container .row p{
+        color:white;
+        text-align: center;
+        font-size: 13px;
+    }
+    
+    .container .row a{
+        color: white;
+        text-decoration: none;
     }
 }
 
@@ -506,6 +526,201 @@ footer{
     }
 }
 
+@media screen and ( max-width: 361px) {
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul{
+        display: flex;
+        width: 126.5%;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background-color: black;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+    nav ul.slide{
+        transform: translateX(0);
+    }
+    .zero{
+        font-size: 23px;
+        text-align: center;
+    }
+    .exp span br{
+        display: none;
+    }
+
+    .pemanis{
+        display: none;
+    }
+    body{
+        height: 90vh;
+    }
+    .Text{
+        position: fixed;
+        bottom: 4%;
+        width: 100%;
+    }
+    .Text h3{
+        font-size: 98%;
+    }
+    .Text h1{
+        margin-top: -30px;
+        font-size: 36px;  
+    }
+
+    .Text p{
+        font-size: 40px;
+    }
+
+    .exp span{
+       font-size: 11px;
+       text-align:justify;
+       margin-right: 50px; 
+    }
+    .exp span br{
+        display: inherit;
+    }
+    .Text h3 br{
+        display: inherit;
+    }
+    .exp a{
+        margin-bottom: 20px;
+    }
+    h6{
+        margin-bottom: -95px;
+        text-align: center;
+        left: 6%;
+    }
+    .hiden{
+        display: inherit;
+        width: 110px;
+    }
+
+    footer{
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        bottom: -13%;
+        left: 0;
+        background-color: rgba(51, 51, 51, 0.411);
+    }
+    
+    .container .row p{
+        color:white;
+        text-align: center;
+        font-size: 13px;
+    }
+    
+    .container .row a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media screen and ( max-width: 322px) {
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul{
+        display: flex;
+        width: 126.5%;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background-color: black;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+    nav ul.slide{
+        transform: translateX(0);
+    }
+    .zero{
+        font-size: 23px;
+        text-align: center;
+    }
+    .exp span br{
+        display: none;
+    }
+
+    .pemanis{
+        display: none;
+    }
+    body{
+        height: 90vh;
+    }
+    .Text{
+        position: fixed;
+        bottom: 4%;
+        width: 100%;
+    }
+    .Text h3{
+        font-size: 98%;
+    }
+    .Text h1{
+        margin-top: -30px;
+        font-size: 36px;  
+    }
+
+    .Text p{
+        font-size: 40px;
+    }
+
+    .exp span{
+       font-size: 11px;
+       text-align:justify;
+       margin-right: 50px; 
+    }
+    .exp span br{
+        display: inherit;
+    }
+    .Text h3 br{
+        display: inherit;
+    }
+    .exp a{
+        margin-bottom: 20px;
+    }
+    h6{
+        margin-bottom: -95px;
+        text-align: center;
+        left: 6%;
+    }
+    .hiden{
+        display: inherit;
+        width: 110px;
+    }
+
+    footer{
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        bottom: -13%;
+        left: 0;
+        background-color: rgba(51, 51, 51, 0.411);
+    }
+    
+    .container .row p{
+        color:white;
+        text-align: center;
+        font-size: 10px;
+    }
+    
+    .container .row a{
+        color: white;
+        text-decoration: none;
+    }
+}
 #preloder{
     background: rgb(0, 0, 0) url(zeroww.gif) no-repeat center;
     height: 100vh;

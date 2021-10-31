@@ -1,0 +1,12 @@
+{   
+    "code-runner.runInTerminal": true,
+    "C_Cpp.updateChannel": "Insiders",
+    "files.autoSave": "afterDelay",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editor.enablePreview": false,
+    "git.enableSmartCommit": true,
+    "git.ignoreMissingGitWarning": true,
+    "git.confirmSync": false,
+    "git.autofetch": true
+
+}

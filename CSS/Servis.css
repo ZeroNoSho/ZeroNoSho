@@ -9,7 +9,7 @@ body{
 }
 .services-section{
     background-size: 100%;;
-    padding: 60px 0;
+    padding: 72px 0;
 }
 .inner-width{
     width: 100%;
@@ -34,8 +34,8 @@ body{
     text-align: center;
     flex-wrap: wrap;
     margin-top: 39px;
-    margin-bottom: 50%;
     margin-left: 20px;
+    padding-bottom: 15px;
 }
 .kembali a{
     color: white;

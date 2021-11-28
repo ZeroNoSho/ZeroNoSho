@@ -39,7 +39,7 @@
                             </div>
                         </div>
                         <div class="contacfrom">
-                            <form id="contacfrom" method="post" action="contact.php">
+                            <form id="contacfrom" name="submit-to-google-sheet">
                                 <h2>Send Messange</h2>
                                 <div class="inputbox">
                                     <span>Full Name :</span>
@@ -78,5 +78,17 @@
             loader.style.display = "none"
         })
     </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz77kqyvJ99muqm56Mq4gacFwIUqJGBvn2auYC5Mk-44aAi_lEjTQlaKTUtLSymcAqW6g/exec'
+        const form = document.forms['submit-to-google-sheet']
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+  </script>
 </body>
 </html>

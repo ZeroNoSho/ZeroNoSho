@@ -20,7 +20,7 @@
                     <div class="icon"><i class="fas fa-map"></i></div>
                         <div class="text1">
                             <h3>Andress</h3>
-                            <p>Jalan Pulau Ketawai Pangkalpinang, bukit intan</p>
+                            <p>INDONESIA</p>
                         </div>
                     </div>
                     <div class="box">
@@ -43,18 +43,22 @@
                                 <h2>Send Messange</h2>
                                 <div class="inputbox">
                                     <span>Full Name :</span>
-                                    <input type="text" name="name" placeholder="Put Your Name">
+                                    <input type="text" name="name" required="required" placeholder="Put Your Name">
                                 </div>
                                 <div class="inputbox">
                                     <span>Email :</span>
-                                    <input type="email" name="email" placeholder="Put Your Email">
+                                    <input type="email" name="email" required="required" placeholder="Put Your Email">
+                                </div>
+                                <div class="inputbox">
+                                    <span>Number :</span>
+                                    <input type="tel" name="nomor" required="required" placeholder="Put Your Number">
                                 </div>
                                 <div class="inputbox">
                                     <span>Type Your Message.....</span>
-                                    <textarea name="message" required="required" placeholder="Put Your Text" ></textarea>
+                                    <textarea name="message" required="required" placeholder="Put Your Mail" ></textarea>
                                 </div>
                                 <div class="inputbox1">
-                                   <input type="submit" name="submit" value="Send"> <a href="../HTML/menu.html"><input type="button" name="" value="back"></a>
+                                   <a href="#"><input  type="submit" name="submit" value="Send"></a> <a href="../HTML/menu.html"><input type="button"  name="back" value="back"></a>
                                 </div>
                             </from>
                         </div>
@@ -75,7 +79,12 @@
         form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
+            .then(response => {
+                alert('Pesan Anda Terkirim')
+                //reset
+                form.reset();
+                console.log('Success!', response);
+            })
             .catch(error => console.error('Error!', error.message))
         })
   </script>

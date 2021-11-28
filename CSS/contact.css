@@ -185,6 +185,7 @@ body{
     background-color: yellowgreen;
 }
 
+
 @media (max-width: 991px){
     .contact{
         padding: 15px;
